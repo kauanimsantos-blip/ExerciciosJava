@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*-------------------------------------------------------------------
   Ex 2.2: Confirmacao de senha
   - informar uma senha
@@ -19,5 +21,14 @@
   -------------------------------------------------------------------*/
 public class Ex02_2 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Informe a senha de 8 dígitos: ");
+        String senha = scanner.next();
+        System.out.println("Confirme a senha de 8 dígitos: ");
+        String confirmaSenha = scanner.next();
+
+        System.out.println(senha.equals(confirmaSenha));
+
     }
 }

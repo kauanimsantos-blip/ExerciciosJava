@@ -1,3 +1,4 @@
+import java.util.Scanner;
 /*-------------------------------------------------------------------
     Ex 2.1: Subtotal e raspadinhas
     - informar o valor da compra
@@ -16,5 +17,17 @@
 -------------------------------------------------------------------*/
 public class Ex02_1 {
         public static void main(String[] args) {
+
+                Scanner teclado = new Scanner(System.in);
+                System.out.print("Informe o valor da compra: R$");
+                Double valorCompra = teclado.nextDouble();
+
+                if (valorCompra >= 100){
+                        int qtdRaspadinhas = (int) (valorCompra / 100.0);
+                        System.out.println("Você ganhou " + qtdRaspadinhas + " raspadinhas de brinde!");
+                } else{
+                        System.out.println("Prefere completar o valor de R$100,00 para ganhar uma raspadinha?");
+                }
+
         }
 }
