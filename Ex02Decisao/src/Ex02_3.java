@@ -35,6 +35,5 @@ public class Ex02_3 {
             System.out.println("Errou");
         }
 
-        // comece seu código aqui
     }
 }

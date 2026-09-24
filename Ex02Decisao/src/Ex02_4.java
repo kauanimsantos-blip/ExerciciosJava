@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*-------------------------------------------------------------------
   Ex 2.4: Entrada de cinema
   - perguntar a idade da pessoa
@@ -27,5 +29,20 @@
 -------------------------------------------------------------------*/
 public class Ex02_4 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Qual é a sua idade?");
+        int idade = scanner.nextInt();
+        System.out.println("Você é estudante? (S/N)");
+        char estudante = scanner.next().charAt(0); // pega só o 1º caractere da próxima string
+
+        // variável booleana guarda um teste lógico
+
+        double valorEntrada = 30;
+        if (estudante >= 1 && estudante <= 17 || estudante == 's' || estudante == 'S'){
+            double meiaEntrada = valorEntrada / 2;
+            System.out.println("Olá! O valor da meia entrada é de R$" + meiaEntrada);
+        } else{
+            System.out.println("O valor da entrada é R$" + valorEntrada);
+        }
     }
 }
