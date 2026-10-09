@@ -1,5 +1,4 @@
-import java.util.Random;
-import java.util.Scanner;
+
 
 /*-------------------------------------------------------------------
   Ex 2.3: Adivinhe o numero
@@ -18,6 +17,8 @@ import java.util.Scanner;
   - adicione uma decisão para reclamar se a pessoa digitar um numero
     que não esteja entre 1 e 3
 -------------------------------------------------------------------*/
+import java.util.Scanner;
+import java.util.Random;
 public class Ex02_3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

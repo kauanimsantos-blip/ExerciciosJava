@@ -21,8 +21,26 @@
   - exemplos: (double) quilometros / litros 
     ou quilometros / (double) litros
 -------------------------------------------------------------------*/
+import java.util.Scanner;
 public class Ex01_6 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        // Solicita a quantidade inteira de quilômetros
+        System.out.print("Digite a quantidade de quilômetros percorridos (inteiro): ");
+        int quilometros = scanner.nextInt();
+
+        // Solicita a quantidade inteira de litros
+        System.out.print("Digite a quantidade de litros consumidos (inteiro): ");
+        int litros = scanner.nextInt();
+
+        // Faz o cálculo convertendo um dos valores para double para não perder as casas decimais
+        double consumo = (double) quilometros / litros;
+
+        // Imprime o resultado
+        System.out.println("O consumo do carro é: " + consumo + " km/l");
+
+        scanner.close();
     }
 }
+
